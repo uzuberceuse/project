@@ -67,9 +67,6 @@ public class ReserveSvcImpl implements ReserveSvc {
 		reserve.setRdate(rdate);
 		
 		/* 예약번호 생성
-		 * 중대 오류 발생 - 누군가 예약하는데 예약이 안끝났는데 
-		 *                  다른 사람이 예약하려고 시도하면
-		 *                  같은 번호로로 예약번호가 생성됨.
 		 */                 
 		CreateRid cr = new CreateRid(reserve.getCountry(), rdate);
 		String rid = reserveDao.createRid(cr);
@@ -105,9 +102,6 @@ public class ReserveSvcImpl implements ReserveSvc {
 		reserve.setRdate(rdate);
 
 		/* 예약번호 생성
-		 * 중대 오류 발생 - 누군가 예약하는데 예약이 안끝났는데 
-		 *                  다른 사람이 예약하려고 시도하면
-		 *                  같은 번호로로 예약번호가 생성됨.
 		 */
 		CreateRid cr = new CreateRid(reserve.getCountry(), rdate);
 		String rid = reserveDao.createRid(cr);

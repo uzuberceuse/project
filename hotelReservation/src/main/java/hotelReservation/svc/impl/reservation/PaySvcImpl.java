@@ -108,9 +108,6 @@ public class PaySvcImpl implements PaySvc {
 				System.out.println("server> 카드만료일:"+expiredate);
 				
 				// 결제번호 생성
-				// 중대 오류 발생 - 누군가 결제하는데 결제가 안끝났는데 
-				//                  다른 사람이 결제하려고 시도하면
-				//                  같은 번호로로 결제번호가 생성됨.
 				CreatePid cp = new CreatePid(cardco, chargedate);
 				String pid = payDao.createPid(cp);
 				System.out.println("server> 결제번호 생성 완료");
@@ -128,10 +125,6 @@ public class PaySvcImpl implements PaySvc {
 				if(pcnt==1) {
 					System.out.println("server> 결제 완료");
 					
-					// 예약번호 이때 생성하기!!        
-					/*
-					 * 수정필요
-					 */
 					
 					// 완료 예약정보 DB에 집어넣기
 					int rcnt = reserveDao.reserveInfo(reserve);
