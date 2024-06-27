@@ -1,0 +1,41 @@
+	body {
+	    	font-family: Arial, sans-serif;
+		}
+		.container {
+		            display: flex;
+		            min-height: 100vh;
+		}
+		.side-panel {
+		            width: 250px; /* Adjust the width as needed */
+		            background-color: #f4f4f4; /* Background color for visibility */
+		}
+		.main-content {
+		            flex: 1;
+		            padding: 20px;
+		}
+		.form-container .form-buttons {
+				    display: flex;
+				    justify-content: center;
+				    margin-top: 20px;
+		}
+		.form-container input[type="submit"],
+		.form-container input[type="button"] {
+					margin-right: 10px;
+				    padding: 10px;
+				    width: 50px;
+		}
+		 .report-btn, .report-done-btn {
+           	background-color: transparent;
+  			border: 2px solid #fff;
+  			color: black;
+       		height: 40px;
+        	width:  75px;       
+        }
+        .report-btn:hover, .report-done-btn:hover {
+  	 		background-color: #fff;
+ 	 		color: #000;
+        }
+        .report-btn > img, .report-done-btn > img {
+        	width: 40px;
+        	height: 40px;
+        }

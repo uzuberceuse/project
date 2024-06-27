@@ -1,0 +1,70 @@
+     body {
+            font-family: Arial, sans-serif;
+        }
+        .hotel-info {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .hotel-info .hotel-details {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .hotel-info h1 {
+            margin: 10px 10px 10px 0;
+        }
+        .hotel-info p {
+            margin: 10px 0;
+        }
+        .room-list {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        .room-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .room-item:last-child {
+            border-bottom: none;
+        }
+        .room-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .room-details {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .room-details h3 {
+            margin: 0;
+        }
+        .room-details p {
+            margin: 5px 0;
+        }
+        .room-price {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .room-price p {
+            margin: 0;
+        }
+        .dibs-button {
+           	background-color: transparent;
+  			border: 2px solid #fff;
+       		height: 30px;
+        	width: 30px;
+        }
+         .dibs-button:hover {
+  	 		background-color: #fff;
+ 	 		color: #000;
+        }
+         .dibs-button img {
+        	width: 30px;
+        	height: 30px;
+        }

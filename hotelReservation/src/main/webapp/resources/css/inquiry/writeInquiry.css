@@ -1,0 +1,31 @@
+
+    .board-form {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .board-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .board-form input[type="text"],
+    .board-form select {
+        width: calc(100% - 20px); /* 너비 조정 */
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .board-form textarea {
+        width: calc(100% - 20px); /* 너비 조정 */
+        height: 150px; /* 높이 조정 */
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .board-form .button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
